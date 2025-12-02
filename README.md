@@ -1,16 +1,75 @@
-# React + Vite
+📊 Employee Management System (EMS) Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple CRUD-based Employee Management System built using React + Vite and JSON Server.
 
-Currently, two official plugins are available:
+This project demonstrates:
+✔ React Hooks (useState, useEffect)
+✔ React Router
+✔ Axios API calls
+✔ JSON Server (Mock REST API)
+✔ Form handling & validation
+✔ CRUD Operations (GET, POST, PUT, DELETE)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Features
 
-## React Compiler
+    Add new employees
+    View employee list
+    Edit employee details
+    Delete employee
+    Toast notifications
+    Clean UI Design
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🛠️ Tech Stack
+Frontend
+React (Vite)
+Axios
+React Router DOM
+React Toastify
+Backend
+JSON Server (Mock API)
 
-## Expanding the ESLint configuration
+📥 How to Run This Project
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Follow these steps to run the EMS Dashboard on your system.
+
+🟦 1. Clone the Repository
+git clone https://github.com/MohanKanapakala/EMS-Dashboard.git
+
+     cd EMS-Dashboard
+
+🟩 2. Install Dependencies
+npm install
+
+🟧 3. Start JSON Server (Backend)
+
+    This project uses db.json as a mock database.
+
+    Install JSON Server (if not installed):
+       npm install -g json-server
+
+    Start the server:
+       json-server --watch db.json --port 3001
+
+    Your backend is now running at:
+       http://localhost:3001/employees
+
+    🟨 4. Start React Application (Frontend)
+
+        Open another terminal:
+           npm start
+        The app runs at:
+           http://localhost:5173
+
+📌 Important Notes
+✔ JSON Server must run for the app to work
+
+    Without it, create/edit/delete will fail.
+
+    ✔ Backend uses port 3001
+
+    Make sure this port is free.
+
+    ✔ Frontend uses port 5173
+    ✔ db.json is your mock database
+
+    You can edit employee data manually here.
