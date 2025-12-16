@@ -5,7 +5,8 @@ import "./EmployeeList.css";
 import 'react-toastify/dist/ReactToastify.css';
 import { toast, ToastContainer } from "react-toastify";
 
-const API_URL = "http://localhost:3001/employees";
+const API_URL =
+  "https://employee-management-dashboard-mock-api.onrender.com/employees";
 
   function EmployeeList() {
   const [employees, setEmployees] = useState([]);
