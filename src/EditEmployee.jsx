@@ -18,7 +18,9 @@ function EditEmployee() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3001/employees/${id}`)
+      .get(
+        `https://employee-management-dashboard-mock-api.onrender.com/employees/${id}`
+      )
       .then((res) => setForm(res.data))
       .catch(() => toast.error("Failed to fetch employee!"));
   }, [id]);
@@ -34,7 +36,10 @@ function EditEmployee() {
       return;
     }
     axios
-      .put(`http://localhost:3001/employees/${id}`, form)
+      .put(
+        `https://employee-management-dashboard-mock-api.onrender.com/employees/${id}`,
+        form
+      )
       .then(() => {
         toast.success("Employee updated successfully!");
         setTimeout(() => navigate("/"), 1500);

@@ -17,7 +17,9 @@ function AddEmployee() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/employees")
+      .get(
+        "https://employee-management-dashboard-mock-api.onrender.com/employees"
+      )
       .then((res) => setEmployees(res.data))
       .catch((err) => console.error(err));
   }, []);
@@ -55,7 +57,10 @@ function AddEmployee() {
     };
 
     axios
-      .post("http://localhost:3001/employees", newEmployee)
+      .post(
+        "https://employee-management-dashboard-mock-api.onrender.com/employees",
+        newEmployee
+      )
       .then(() => {
         toast.success("Employee added successfully!");
         setTimeout(() => navigate("/"), 1500);
